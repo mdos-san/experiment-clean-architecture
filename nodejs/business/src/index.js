@@ -1,1 +1,5 @@
-export * as user from './user';
+import user from './user.js';
+
+export default {
+    user
+}
