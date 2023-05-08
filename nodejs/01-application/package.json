@@ -5,8 +5,7 @@
   "main": "build/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +13,6 @@
   "dependencies": {
     "business": "file:../00-business"
   },
-  "type": "module",
   "devDependencies": {
     "typescript": "^5.0.4"
   }

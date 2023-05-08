@@ -1,7 +1,9 @@
-import { Hotel, Room } from "business";
+import { Room } from "business";
+import { getAdapters } from "../ports";
 
-function createRoomInHotel(hotel: Hotel, newRoom: Room) {
-    hotel.rooms[newRoom.id] = newRoom;
+function createRoomInHotel(newRoom: Room) {
+    let adapters = getAdapters();
+    adapters.storage.create("room", newRoom.id, JSON.stringify(newRoom));
 }
 
 export default createRoomInHotel;
