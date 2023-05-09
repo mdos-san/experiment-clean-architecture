@@ -1,10 +1,11 @@
 {
-  "name": "adapter",
+  "name": "configuration",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
   "types": "types/index.d.ts",
   "scripts": {
+    "start": "node ./build/index.js",
     "build": "tsc"
   },
   "keywords": [],
